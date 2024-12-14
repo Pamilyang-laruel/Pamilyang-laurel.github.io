@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.video-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center; /* Centers the menu and button horizontally */
+    align-items: center; 
+    gap: 25px; 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #000000;
+    position: relative;
+
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff7e5f;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+h1:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+
+
+
+
+
+
+/* General Styles for Heading */
+h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+h4:hover {
+    transform: scale(1.2); /* Zoom in by 20% */
+}
+
+/* Optional: If you want to zoom in text for a different class (e.g., paragraphs or other headers) */
+h4:hover, p:hover {
+    transform: scale(1.1); /* Slight zoom for h2 or paragraphs */
+}
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #ffffff;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+header .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header .menu li {
+    margin-right: 1rem;
+}
+
+header .menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .order-btn {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.hero {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease-in-out;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    z-index: 1;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.menu-section, .about-section, .contact-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    
+}
+
+.menu-items .item {
+    background: #f4e1d2;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 30%;
+}
+
+footer {
+    background-color: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
